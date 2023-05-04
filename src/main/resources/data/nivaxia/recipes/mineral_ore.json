@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+ "key": {
+   "#": {
+     "item": "nivaxia:mineral"
+   }
+ },
+  "result": {
+    "item": "nivaxia:mineral_ore"
+  }
+}
