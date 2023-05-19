@@ -3,6 +3,9 @@ package net.bluev3.nivaxia;
 import com.mojang.logging.LogUtils;
 import net.bluev3.nivaxia.block.ModBlocks;
 import net.bluev3.nivaxia.item.ModItems;
+import net.bluev3.nivaxia.world.dimension.ModDimensions;
+import net.bluev3.nivaxia.world.feature.ModConfiguredFeatures;
+import net.bluev3.nivaxia.world.feature.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -37,7 +40,13 @@ public class Nivaxia {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+
+        ModDimensions.register();
+
         modEventBus.addListener(this::commonSetup);
+
 
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -1,0 +1,20 @@
+{
+  "temperature": 0,
+  "downfall": 0.4,
+  "precipitation": "snow",
+  "temperature_modifier": "frozen",
+  "creature_spawn_probability": 0.07,
+  "effects": {
+    "sky_color": 12161742,
+    "fog_color": 13878229,
+    "water_color": 201781,
+    "water_fog_color": 134208
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    "minecraft:ice_spike",
+    "minecraft:blue_ice"
+  ]
+}
